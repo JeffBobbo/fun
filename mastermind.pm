@@ -180,8 +180,8 @@ sub auth
   return accessLevel('normal');
 }
 
-BobboBot::command::add('mastermind', 'run', \&BobboBot::mastermind::run);
-BobboBot::command::add('mastermind', 'help', \&BobboBot::mastermind::help);
-BobboBot::command::add('mastermind', 'auth', \&BobboBot::mastermind::auth);
+BobboBot::module::add('mastermind', 'run', \&BobboBot::mastermind::run);
+BobboBot::module::add('mastermind', 'help', \&BobboBot::mastermind::help);
+BobboBot::module::add('mastermind', 'auth', \&BobboBot::mastermind::auth);
 
 1;

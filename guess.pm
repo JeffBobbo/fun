@@ -101,8 +101,8 @@ sub auth
   return accessLevel('normal');
 }
 
-BobboBot::command::add('guess', 'run', \&BobboBot::guess::run);
-BobboBot::command::add('guess', 'help', \&BobboBot::guess::help);
-BobboBot::command::add('guess', 'auth', \&BobboBot::guess::auth);
+BobboBot::module::add('guess', 'run', \&BobboBot::guess::run);
+BobboBot::module::add('guess', 'help', \&BobboBot::guess::help);
+BobboBot::module::add('guess', 'auth', \&BobboBot::guess::auth);
 
 1;

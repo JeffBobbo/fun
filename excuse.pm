@@ -29,8 +29,8 @@ sub auth
   return accessLevel('normal');
 }
 
-BobboBot::command::add('excuse', 'run', \&BobboBot::excuse::run);
-BobboBot::command::add('excuse', 'help', \&BobboBot::excuse::help);
-BobboBot::command::add('excuse', 'auth', \&BobboBot::excuse::auth);
+BobboBot::module::add('excuse', 'run', \&BobboBot::excuse::run);
+BobboBot::module::add('excuse', 'help', \&BobboBot::excuse::help);
+BobboBot::module::add('excuse', 'auth', \&BobboBot::excuse::auth);
 
 1;

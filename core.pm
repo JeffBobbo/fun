@@ -37,8 +37,8 @@ sub auth
   return accessLevel('normal');
 }
 
-BobboBot::command::add('core', 'run', \&BobboBot::core::run);
-BobboBot::command::add('core', 'help', \&BobboBot::core::help);
-BobboBot::command::add('core', 'auth', \&BobboBot::core::auth);
+BobboBot::module::add('core', 'run', \&BobboBot::core::run);
+BobboBot::module::add('core', 'help', \&BobboBot::core::help);
+BobboBot::module::add('core', 'auth', \&BobboBot::core::auth);
 
 1;
