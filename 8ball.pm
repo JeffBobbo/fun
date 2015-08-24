@@ -85,8 +85,8 @@ sub auth
   return accessLevel('normal');
 }
 
-BobboBot::module::add('8ball', 'run', \&BobboBot::8ball::run);
-BobboBot::module::add('8ball', 'help', \&BobboBot::8ball::help);
-BobboBot::module::add('8ball', 'auth', \&BobboBot::8ball::auth);
+BobboBot::module::addCommand('8ball', 'run', \&BobboBot::8ball::run);
+BobboBot::module::addCommand('8ball', 'help', \&BobboBot::8ball::help);
+BobboBot::module::addCommand('8ball', 'auth', \&BobboBot::8ball::auth);
 
 1;

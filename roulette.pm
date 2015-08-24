@@ -86,8 +86,8 @@ sub auth
   return accessLevel('normal');
 }
 
-BobboBot::module::add('roulette', 'run', \&BobboBot::roulette::run);
-BobboBot::module::add('roulette', 'help', \&BobboBot::roulette::help);
-BobboBot::module::add('roulette', 'auth', \&BobboBot::roulette::auth);
+BobboBot::module::addCommand('roulette', 'run', \&BobboBot::roulette::run);
+BobboBot::module::addCommand('roulette', 'help', \&BobboBot::roulette::help);
+BobboBot::module::addCommand('roulette', 'auth', \&BobboBot::roulette::auth);
 
 1;

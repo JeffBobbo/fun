@@ -190,8 +190,8 @@ sub auth
   return accessLevel('normal');
 }
 
-BobboBot::module::add('quote', 'run', \&BobboBot::quote::run);
-BobboBot::module::add('quote', 'help', \&BobboBot::quote::help);
-BobboBot::module::add('quote', 'auth', \&BobboBot::quote::auth);
+BobboBot::module::addCommand('quote', 'run', \&BobboBot::quote::run);
+BobboBot::module::addCommand('quote', 'help', \&BobboBot::quote::help);
+BobboBot::module::addCommand('quote', 'auth', \&BobboBot::quote::auth);
 
 1;

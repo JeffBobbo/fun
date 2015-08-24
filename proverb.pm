@@ -33,8 +33,8 @@ sub auth
   return accessLevel('normal');
 }
 
-BobboBot::module::add('proverb', 'run', \&BobboBot::proverb::run);
-BobboBot::module::add('proverb', 'help', \&BobboBot::proverb::help);
-BobboBot::module::add('proverb', 'auth', \&BobboBot::proverb::auth);
+BobboBot::module::addCommand('proverb', 'run', \&BobboBot::proverb::run);
+BobboBot::module::addCommand('proverb', 'help', \&BobboBot::proverb::help);
+BobboBot::module::addCommand('proverb', 'auth', \&BobboBot::proverb::auth);
 
 1;

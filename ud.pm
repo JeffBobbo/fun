@@ -80,8 +80,8 @@ sub auth
   return accessLevel('normal');
 }
 
-BobboBot::module::add('ud', 'run', \&BobboBot::ud::run);
-BobboBot::module::add('ud', 'help', \&BobboBot::ud::help);
-BobboBot::module::add('ud', 'auth', \&BobboBot::ud::auth);
+BobboBot::module::addCommand('ud', 'run', \&BobboBot::ud::run);
+BobboBot::module::addCommand('ud', 'help', \&BobboBot::ud::help);
+BobboBot::module::addCommand('ud', 'auth', \&BobboBot::ud::auth);
 
 1;
