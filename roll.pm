@@ -12,7 +12,7 @@ use POSIX;
 sub run
 {
   my $max = shift(@{$_[0]->{arg}});
-  my $who = $_[0]->{who};
+  my ($who) = split('!', $_[0]->{who});
 
   if (!defined $max)
   {
